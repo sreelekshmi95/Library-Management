@@ -39,7 +39,7 @@ class ControllerBook extends Controller
         return redirect()->route('books');
     }
 
-
+    // this function is used to edit the details of the  book 
  
     public function edit(book $book)
     {
