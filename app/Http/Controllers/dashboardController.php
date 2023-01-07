@@ -25,7 +25,6 @@ class dashboardController extends Controller
         error_log($region_name);
         error_log($country_name);
 
-
         return view('dashboard', [
             'authors' => auther::count(),
             'publishers' => publisher::count(),
@@ -37,7 +36,7 @@ class dashboardController extends Controller
             'region' => $region_name,
         ]);
     }
-
+// password changing
     public function change_password_view()
     {
         return view('reset_password');
