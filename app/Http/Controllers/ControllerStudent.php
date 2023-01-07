@@ -21,7 +21,7 @@ class ControllerStudent extends Controller
     {
         return view('student.create');
     }
-
+    // student details validated
     public function store(StorestudentRequest $request)
     {
         student::create($request->validated());
